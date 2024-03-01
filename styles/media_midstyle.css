@@ -1,0 +1,88 @@
+@media only screen and (min-width: 680px) {
+    :root {
+        --logo-width: 190px;
+        --primary-size: 16px;
+        --small-size: 14px;
+        --medium-size: 16px;
+        --large-size: 20px;
+    }
+
+    body>header {
+        padding: 40px;
+    }
+
+    .faq article {
+        margin-bottom: 30px;
+    }
+
+    .welcome,
+    section.downloads {
+        margin: 60px 0;
+    }
+
+    div.downloads {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.downloads header {
+        max-width: 800px;
+        padding: 0 20px;
+    }
+
+    .links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    body>footer,
+    .faq {
+        padding: 6pc 80px;
+    }
+
+    .copyright {
+        flex-flow: row wrap;
+        width: 100%;
+        filter: invert(0);
+
+    }
+
+    .copyright p {
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+    }
+
+    .copyright .social-icons {
+        margin-left: auto;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1100px) {
+    :root {
+        --largest-size: 45px;
+        --secondary-space: 24px;
+    }
+
+    body>header {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    div.downloads {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section.downloads header {
+        max-width: 1100px;
+    }
+
+    .links {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
